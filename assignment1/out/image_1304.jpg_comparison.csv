@@ -1,0 +1,4 @@
+,target_image,comparison_image,distance,path
+0,image_1304.jpg,image_0896.jpg,1632,../../CDS-VIS/flowers/image_0896.jpg
+1,image_1304.jpg,image_1115.jpg,1641,../../CDS-VIS/flowers/image_1115.jpg
+2,image_1304.jpg,image_1002.jpg,1676,../../CDS-VIS/flowers/image_1002.jpg
