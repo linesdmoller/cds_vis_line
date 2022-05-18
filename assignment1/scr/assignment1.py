@@ -17,7 +17,7 @@
 import os
 import sys
 import pandas as pd
-sys.path.append(os.path.join("..", "..", "CDS-VIS"))
+sys.path.append(os.path.join(".."))
 import cv2
 import numpy as np
 from utils.imutils import jimshow
@@ -30,7 +30,7 @@ import matplotlib.image as mpimg
 
 # Define file path
 my_image = "image_1304.jpg"
-filepath = os.path.join("..", "..", "CDS-VIS", "flowers", my_image)
+filepath = os.path.join("in", "flowers", my_image)
 
 # Load image
 target_image = cv2.imread(filepath)
@@ -48,7 +48,7 @@ target_image_hist = cv2.calcHist([target_image], [0], None, [256], [0,256])
 target_image_norm = cv2.normalize(target_image_hist, target_image_hist, 0,255, cv2.NORM_MINMAX)
 
 # ALL THE OTHER IMAGES:
-filepath = os.path.join("..", "..", "CDS-VIS", "flowers")
+filepath = os.path.join("in", "flowers")
 images = os.listdir(filepath)
 
 all_images = []
@@ -57,14 +57,14 @@ print("Currently calculating distance scores - this may take a while...")
 # Save filepaths of all images (except the target image) in a list
 for image in images:
     if image != my_image:
-        filepath = os.path.join("..", "..", "CDS-VIS", "flowers", image)
+        filepath = os.path.join("in", "flowers", image)
         comparison_image = cv2.imread(filepath)
         all_filepaths = os.path.join(image)
         all_images.append(all_filepaths)
 
 # Calculate distance scores of all images
 for image in all_images:
-    filepath = os.path.join("..", "..", "CDS-VIS", "flowers", image)
+    filepath = os.path.join("in", "flowers", image)
     comparison_image = cv2.imread(filepath)
     # Histogram for comparison_image
     comparison_image_hist = cv2.calcHist([comparison_image], [0], None, [256], [0,256])
@@ -131,11 +131,11 @@ target_image_resized = cv2.resize(target_image, (width, height))
 vstacked_images = np.vstack([target_image_resized, hstacked_images]) # vertical stack
 
 # Save stacked image
-cv2.imwrite("out/comparison_images.png", vstacked_images)
+cv2.imwrite(f"out/{my_image}_comparison_images.png", vstacked_images)
 print("Image saved")
 
 ### 5. Save a CSV which has one column for the filename and three columns showing the filenames of the closest images in descending order
 
 # Save a csv of dataFrame (created earlier)
-data.to_csv(f"out/{my_image}_comparison.csv")
+data.to_csv(f"out/{my_image}_comparison_dataframe.csv")
 print("csv saved")
