@@ -53,7 +53,6 @@ images = os.listdir(filepath)
 
 all_images = []
 
-print("Currently calculating distance scores - this may take a while...")
 # Save filepaths of all images (except the target image) in a list
 for image in images:
     if image != my_image:
@@ -62,6 +61,7 @@ for image in images:
         all_filepaths = os.path.join(image)
         all_images.append(all_filepaths)
 
+print("Currently calculating distance scores - this may take a while...")
 # Calculate distance scores of all images
 for image in all_images:
     filepath = os.path.join("in", "flowers", image)
