@@ -80,6 +80,7 @@ def plot_history(H, epochs):
     plt.savefig('out/his_plt.png')
     
 # LOAD THE CIFAR_10 DATA:
+print("Currently loading cifar10 dataset - this may take a while")
 (X_train, y_train), (X_test, y_test) = cifar10.load_data()
 
 # Normalize the Cifar_10 dataset
@@ -99,6 +100,7 @@ labelNames = ["airplane", "automobile",
               "ship", "truck"]
 
 # load model without classifier layers
+print("Currently loading VGG16 model without classifier layers")
 model = VGG16(include_top=False, 
               pooling='avg',
               input_shape=(32, 32, 3))
@@ -111,10 +113,12 @@ for layer in model.layers:
 flat1 = Flatten()(model.layers[-1].output)
 class1 = Dense(128, activation='relu')(flat1)
 output = Dense(10, activation='softmax')(class1)
+print("Classifier layers added")
 
 # define new model
 model = Model(inputs=model.inputs, 
               outputs=output)
+print("New model defined")
 
 # COMPILE:
 lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
@@ -126,8 +130,10 @@ sgd = SGD(learning_rate=lr_schedule)
 model.compile(optimizer=sgd,
               loss='categorical_crossentropy',
               metrics=['accuracy'])
+print("Model compiled")
 
 # TRAIN:
+print("Curently training model - this may take a while")
 H = model.fit(X_train, y_train, 
               validation_data=(X_test, y_test), 
               batch_size=128,
@@ -136,6 +142,7 @@ H = model.fit(X_train, y_train,
 
 #PLOT (and save) LOSS AND ACCURACY
 plot_history(H, 10)
+print("History plot saved")
 
 # MAKE CLASSIFICATION REPORT
 predictions = model.predict(X_test, batch_size=128)
@@ -146,3 +153,4 @@ report = classification_report(y_test.argmax(axis=1),
 # SAVE CLASSIFICATION REPORT
 with open('out/cl_report.txt', 'w', encoding='UTF8') as f:
     f.write(report)
+print("Classification report saved")
