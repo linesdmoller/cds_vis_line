@@ -29,6 +29,7 @@ python3 scr/finalproject.py
 The output of this project is;
 - A txt file containing the classification report (see [Link](https://github.com/linesdmoller/cds_vis_line/blob/main/finalproject/out/cl_report.txt)).
 - A png file containg the history plot from the training session (see [Link](https://github.com/linesdmoller/cds_vis_line/blob/main/finalproject/out/his_plt.png))
+- A png file containing a plot of the model's architecture (see [Link](https://github.com/linesdmoller/cds_vis_line/blob/main/finalproject/out/visualised_model.png))
 
 The trained model performs really well - it has an f1 score of 0.99. This means that the model predictions are about 99% accurate. Test runs with fewer and more epochs suggest that the model performs better the more epochs it is train with. All test runs as well as the final results show, that the class, 'rock', is the class that the model is best at predicting. The f1 score of the 'rock' class in the final results is actually 1, meaning 100% (this is of course rounded up). The history plots show a rapit decrease in the loss curve and a rapid increase in the accuracy curve over the first 10 epochs. After that, the curves flatten out. This indicates that the model learns most of it's knowledge about how to solve the classification task over the first 10 epochs.
 
