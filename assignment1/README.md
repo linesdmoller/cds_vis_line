@@ -28,7 +28,7 @@ If one wishes to change the target image, simply type in another filename from t
 
 To run this script in the terminal, navigate to the folder outside the 'src' folder and run:
 
-python3 scr/assignment3.py
+python3 scr/assignment1.py
 
 ## DISCUSSION OF RESULTS:
 The output of this project is;
