@@ -11,3 +11,4 @@ Each project folder has the following directory structure:
 ```in```| Input data should be added here.
 ```out``` | Output is saved here after running script.
 ```scr``` | Python scripts.
+```requirements.txt``` | Required packages to download for running the script.
