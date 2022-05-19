@@ -40,7 +40,7 @@ This project uses scikit-learn's Logistic Regression model to make classificatio
 This project uses a multilayered feedforward neural network, written in nympy, designed by Ross Deans Kristensen-McLachlan, to make classification predictions on image data. The network structure can be found in the 'utils' folder, under 'neuralnetwork.py'. 
 
 ## USAGE:
-To run each of the two scripts in the terminal, navigate to the folder outside the 'src' folder and run, one of the two:
+To run each of the two scripts in the terminal, navigate to the folder outside the 'scr' folder and run, one of the two:
 - python3 scr/assignment2pt1.py
 - python3 scr/assignment2pt2.py
 
