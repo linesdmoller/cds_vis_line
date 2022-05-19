@@ -1,0 +1,32 @@
+Assignment 2 pt 1:
+
+# IMPORTS:
+sys
+os
+sys.path.append(os.path.join(".."))
+tensorflow as tf
+csv
+cv2
+numpy as np
+from tensorflow.keras.datasets import cifar10
+from sklearn.preprocessing import LabelBinarizer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+from sklearn.linear_model import LogisticRegression
+
+Assignment 2 pt 2:
+
+# IMPORTS:
+tensorflow as tf
+sys
+os
+sys.path.append(os.path.join(".."))
+csv
+cv2
+numpy as np
+from tensorflow.keras.datasets import cifar10
+from utils.neuralnetwork import NeuralNetwork
+from sklearn.preprocessing import LabelBinarizer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+from sklearn.linear_model import LogisticRegression
