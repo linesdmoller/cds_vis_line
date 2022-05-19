@@ -1,29 +1,11 @@
-Assignment 2 pt 1:
+# Assignment 2 pt 1 AND pt :
 
 # IMPORTS:
 sys
 os
-tensorflow as tf
+tensorflow
+opencv
 csv
-cv2
-numpy as np
-from tensorflow.keras.datasets import cifar10
-from sklearn.preprocessing import LabelBinarizer
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
-from sklearn.linear_model import LogisticRegression
-
-Assignment 2 pt 2:
-
-# IMPORTS:
-tensorflow as tf
-sys
-os
-csv
-cv2
-numpy as np
-from tensorflow.keras.datasets import cifar10
-from sklearn.preprocessing import LabelBinarizer
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
-from sklearn.linear_model import LogisticRegression
+numpy
+tensorflow
+sklearn
