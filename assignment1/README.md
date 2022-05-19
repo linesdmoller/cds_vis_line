@@ -7,7 +7,7 @@ Contributors: None
 - Link to this repository: (https://github.com/linesdmoller/cds_vis_line/tree/main/assignment1)
 
 ## PROJECT DESCRIPTION:
-*This project is assignment 1 in the sublementary course, 'Visual Analytics' in 'Cultural Data Science', at Aarhus University.*
+*This project is assignment 1 in the supplementary course, 'Visual Analytics' in 'Cultural Data Science', at Aarhus University.*
 - Link to assignment description: (https://github.com/CDS-AU-DK/cds-visual/blob/main/assignments/assignment1.md)
 
 **Task outline:**
