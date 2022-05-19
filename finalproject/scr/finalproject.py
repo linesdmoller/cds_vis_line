@@ -39,6 +39,9 @@ from tensorflow.keras.models import Sequential
 # generic model object
 from tensorflow.keras.models import Model
 
+# Plot model
+from tensorflow.keras.utils import plot_model
+
 # optimizers
 from tensorflow.keras.optimizers.schedules import ExponentialDecay
 from tensorflow.keras.optimizers import SGD
@@ -157,6 +160,8 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 
 model.summary()
+
+modelplot = plot_model(model, show_shapes=True, show_layer_names=True, to_file='out/visualised_model.png')
 
 # Data augmentation (slightly distorting images for more diverse images)
 datagen = ImageDataGenerator(horizontal_flip=True,
