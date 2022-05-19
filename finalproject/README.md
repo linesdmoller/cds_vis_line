@@ -11,7 +11,7 @@ Link to this repository: (https://github.com/linesdmoller/cds_vis_line/tree/main
 *This project is a self-assigned project submitted as a final project in the supplementary course, 'Visual Analytics' in 'Cultural Data Science', at Aarhus University.*
 
 **Goal:**
-The goal of this project is to build and train a Convolutional Neural Network model to predict classes of the hand gestures; 'rock', 'paper' and 'sciccors', based on a dataset of multiple images illustrating the same three hand gestures (according to the commonly known game; 'Rock, Paper, Scisssors'). I then want to evaluate the model's performance by making and saving a png of the history plot ('loss' and 'accuracy' curve) from the training session and a txt of the classification report.
+The goal of this project is to build and train a Convolutional Neural Network model to predict classes of the hand gestures; 'rock', 'paper' and 'sciccors', based on a dataset of multiple images illustrating the same three hand gestures (according to the commonly known game; 'Rock, Paper, Scisssors'). I want to save a png of the model's architecture. I then want to evaluate the model's performance by making and saving a png of the history plot ('loss' and 'accuracy' curve) from the training session and a txt of the classification report. 
 
 ## METHODS:
 The dataset used in this project stems from; (https://www.kaggle.com/code/quadeer15sh/tf-keras-cnn-99-accuracy/data).
