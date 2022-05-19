@@ -29,9 +29,13 @@ python3 scr/assignment3.py
 
 ## DISCUSSION OF RESULTS:
 The output of this project is;
+- A txt file containing the classification report (see [Link](https://github.com/linesdmoller/cds_vis_line/blob/main/assignment3/out/cl_report.txt)).
+- A png file containg the history plot from the training session (see [Link](https://github.com/linesdmoller/cds_vis_line/blob/main/assignment3/out/his_plt.png))
 
-A txt file containing the classification report (see [Link](https://github.com/linesdmoller/cds_vis_line/blob/main/assignment3/out/cl_report.txt)).
-A png file containg the history plot from the training session (see [Link](https://github.com/linesdmoller/cds_vis_line/blob/main/assignment3/out/his_plt.png))
+According to the classification report, the model has an f1 score around 0.52, which means that the model performs predictions with 52% accuracy. This is okay for a model of a relatively small complexity. According to the classification report, the top 4 classes that the model is best at predicting are;
 
-
+1. 'ship'
+2. 'frog'
+3. 'airplane'
+4. 'horse'
 
