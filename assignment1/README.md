@@ -26,7 +26,7 @@ In order to reproduce this project, one must first add the dataset 'flowers' (im
 
 If one wishes to change the target image, simply type in another filename from the dataset in the 'my_image' variable.
 
-To run this script in the terminal, navigate to the folder outside the 'src' folder and run:
+To run this script in the terminal, navigate to the folder outside the 'scr' folder and run:
 
 python3 scr/assignment1.py
 
