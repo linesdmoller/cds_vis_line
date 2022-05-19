@@ -2,10 +2,7 @@
 os
 sys
 pandas as pd
-sys.path.append(os.path.join(".."))
 cv2
 numpy as np
-utils.imutils import jimshow
-utils.imutils import jimshow_channel
 matplotlib.pyplot as plt
 matplotlib.image as mpimg
