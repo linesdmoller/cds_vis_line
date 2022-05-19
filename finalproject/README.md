@@ -21,7 +21,7 @@ I approach the goal of this project by using TensorFlow's keras model to build t
 ## USAGE:
 In order to reporduce this project, one must first download the input dataset from here; [Link](https://www.kaggle.com/code/quadeer15sh/tf-keras-cnn-99-accuracy/data), and add the data to the 'in' folder in this project. One might also need to delete the blank file.
 
-To run this script in the terminal, navigate to the folder outside the 'src' folder and run:
+To run this script in the terminal, navigate to the folder outside the 'scr' folder and run:
 
 python3 scr/finalproject.py
 
