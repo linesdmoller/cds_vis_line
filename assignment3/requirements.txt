@@ -16,6 +16,6 @@ from tensorflow.keras.optimizers.schedules import ExponentialDecay
 from tensorflow.keras.optimizers import SGD
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import classification_report
-import numpy as np
-import matplotlib.pyplot as plt
-import csv 
+numpy as np
+matplotlib.pyplot as plt
+csv 
