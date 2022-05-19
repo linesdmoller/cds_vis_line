@@ -1,8 +1,7 @@
 # IMPORTS:
 os
 sys
-pandas as pd
-cv2
-numpy as np
-matplotlib.pyplot as plt
-matplotlib.image as mpimg
+pandas
+opencv
+numpy
+matplotlib
