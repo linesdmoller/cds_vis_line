@@ -11,7 +11,7 @@
 
 ## USAGE:
 # To run this script:
-# python3 scr/assignment3.py
+# python3 scr/assignment1.py
 
 # IMPORTS:
 import os
